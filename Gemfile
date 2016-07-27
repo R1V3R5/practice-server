@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
-# Use postgresql as the database for Active Record
+# Use postgres as the database.
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
@@ -26,17 +27,21 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+# Use rack-cors for Frontend joy.
 gem 'rack-cors'
 # Use Kaminari for pagination.
 gem 'kaminari'
 
 gem 'rails_12factor', group: :production
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # I like Pry for things.
+  gem 'pry'
 end
 
 group :development do
